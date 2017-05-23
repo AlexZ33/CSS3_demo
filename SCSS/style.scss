@@ -1,0 +1,104 @@
+/* home banner */
+@import "mobile";
+@import "animation";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.pagination{
+
+	text-align: center;
+	margin-top: 50px;
+	line-height: 20px;
+	span{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		@include radius(50%);
+		background:rgba(#111,0.6);
+		color: #fff;
+		cursor: pointer;
+		&.active{
+			background: #111;
+		}
+	}
+
+}
+
+.banner_slide{
+	height: 431px;
+	width: 1150px;
+	margin: 0 auto;
+	padding-top: 45px;
+	position: relative;
+
+	.banner_item{
+	
+	position: relative;
+	@include transition:(0.3s);
+	@include opacity(0);
+	visibility: hidden;
+
+	&.active{
+		opacity: 1;
+		visibility: visible;
+		>div{
+			&:nth-of-type(1){
+				@include animation(banner 1s);
+
+			}
+		}
+	}
+
+	>div{
+		position: absolute;
+		line-height: 0;
+		@include: transition: (0.3s) ;
+		@include: box-shadow(4px 4px 4px rgba(black,0.1)) ;
+
+		img{
+			width: 100%;
+			height: auto;
+		}
+
+		&:nth-of-type(1){
+			width: 200px;
+			height: 200px;
+			left: 0;
+			top: 0;
+		}
+		
+		&:nth-of-type(2){
+			width: 350px;
+			height: 200px;
+			left: 220px;
+			top: 0;
+		}
+		
+		&:nth-of-type(3){
+			width: 560px;
+			height: 430px;
+			left: 590px;
+			top: 0;
+		}
+		
+		&:nth-of-type(4){
+			width: 290px;
+			height: 210px;
+			left: 0;
+			top: 220px;
+		}
+		&:nth-of-type(5){
+			width: 260px;
+			height: 210px;
+			left: 310px;
+			top: 220px;
+		}
+	}
+
+  }
+}
+
+

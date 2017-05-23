@@ -1,0 +1,165 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    padding:50px 0;
+    background-color:#fff;
+    font-size:14px;
+    font-family:'Avenir Next';
+    color:#555;
+    /*字体抗锯齿*/
+    -webkit-font-smoothing: antialiased;
+}
+
+.slider .main .main-i,
+.slider .main,
+.slider{
+    width:100%;
+    height:450px;
+    position:relative;
+}
+
+/*幻灯片区域*/
+.slider .main{
+    overflow:hidden;
+}
+
+/*每一个幻灯片的样式*/
+.slider .main .main-i img{
+    width:100%;
+    position:absolute;
+    left:0;
+    top:50%;
+    z-index:1;
+}
+
+.slider .main .main-i .caption{
+    position:absolute;
+    right:50%;
+    top:30%;
+    z-index:9;
+}
+
+.slider .main .main-i .caption h2{
+    font-size:40px;
+    line-height:50px;
+    color:#b5b5b5;
+    text-align:right;
+}
+
+.slider .main .main-i .caption h3{
+    font-size:70px;
+    line-height:70px;
+    color:#000;
+    text-align:right;
+    font-family:'Open Sans Condensed';
+}
+
+/*控制按钮区域*/
+.slider .ctrl{
+    width:100%;
+    height:13px;
+    line-height:13px;
+    text-align:center;
+    left:0;
+    bottom:-13px;
+    /*background-color:#f00;*/
+}
+
+.slider .ctrl .ctrl-i{
+    display:inline-block;
+    width:150px;
+    height:13px;
+    background-color:#666;
+    box-shadow:0 1px 1px rgba(0,0,0,.3);
+    position:relative;
+    margin-left:1px;
+}
+
+.slider .ctrl .ctrl-i img{
+    width:100%;
+    position:absolute;
+    left:0;
+    bottom:50px;
+    z-index:1;
+    opacity:0;
+    -webkit-transition:all .2s;
+}
+
+/*hover到控制按钮的样式*/
+.slider .ctrl .ctrl-i:hover{
+    background-color:#f0f0f0;
+}
+
+.slider .ctrl .ctrl-i:hover img{
+    bottom:13px;
+    -webkit-box-reflect: below 0px -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(transparent),
+            color-stop(50%,transparent),
+            to(rgba(255,255,255,.3))
+    );
+    opacity:1;
+}
+
+/*active当前展现的状态*/
+.slider .ctrl .ctrl-i_active:hover,
+.slider .ctrl .ctrl-i_active{
+    background-color:#000;
+}
+
+.slider .ctrl .ctrl-i_active:hover img{
+    opacity:0;
+}
+
+/*幻灯片切换的样式*/
+.slider .main .main-i{
+    opacity:0;
+    position:absolute;
+    right:50%;
+    top:0;
+    -webkit-transition:all .5s;
+    z-index:2;
+}
+
+.slider .main .main-i_right{
+    right:-50%;
+}
+
+.slider .main .main-i h2{
+    margin-right:45px;
+}
+
+.slider .main .main-i h3{
+    margin-right:-45px;
+}
+
+.slider .main .main-i h2,
+.slider .main .main-i h3{
+    opacity:0;
+    -webkit-transition:all 1s .8s;
+}
+
+#main_background,
+.slider .main .main-i_active{
+    right:0;
+    opacity:1;
+}
+
+#main_background{
+    z-index:1;
+}
+
+.slider .main .main-i_active h2,
+.slider .main .main-i_active h3{
+    margin-right:0;
+    opacity:1;
+}
+
+.slider .main .main-i .caption{
+    margin-right:13%;
+}
