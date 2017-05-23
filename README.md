@@ -3,9 +3,14 @@
 各种CSS3的小玩意儿 (Widgets)
 
 ## 简介
-[](https://alexz33.github.io/CSS3_demo/CSS3+JS-Preview-Slideshow/index.html)
 
+[CSS3+JS-Preview-Slideshow](https://alexz33.github.io/CSS3_demo/CSS3+JS-Preview-Slideshow/index.html)
 
+[S-Scattered-Polaroids-Gallery](CSS3_demo/CSS3+JS-Scattered-Polaroids-Gallery/index.html)
+
+[css3实现漂亮ToolTips](https://alexz33.github.io/CSS3_demo/css3实现漂亮ToolTips.html)
+
+[css3实现网页平滑过渡效果](https://alexz33.github.io/CSS3_demo/css3实现网页平滑过渡效果.html)
 
 >css3名片特效
 
