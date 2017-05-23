@@ -3,10 +3,10 @@
 各种CSS3的小玩意儿 (Widgets)
 
 ## 简介
-
+[css3_picshadow](https://alexz33.github.io/CSS3_demo/css3_picshadow.html)
 [CSS3+JS-Preview-Slideshow](https://alexz33.github.io/CSS3_demo/CSS3+JS-Preview-Slideshow/index.html)
 
-[S-Scattered-Polaroids-Gallery](CSS3_demo/CSS3+JS-Scattered-Polaroids-Gallery/index.html)
+[S-Scattered-Polaroids-Gallery](https://alexz33.github.io/CSS3_demo/CSS3+JS-Scattered-Polaroids-Gallery/index.html)
 
 [css3实现漂亮ToolTips](https://alexz33.github.io/CSS3_demo/css3实现漂亮ToolTips.html)
 
