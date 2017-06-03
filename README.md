@@ -33,3 +33,17 @@
 [预览幻灯片链接](https://alexz33.github.io/CSS3_demo/CSS3+JS-Preview-Slideshow/index.html)
 
 
+> 3d立方体
+
+[3d立方体链接](https://alexz33.github.io/CSS3_demo/3dRect.html)
+
+>css3 实现3D轮播
+
+
+[css3 实现3D轮播灯片链接](https://alexz33.github.io/CSS3_demo/css3实现3D轮播.html)
+
+
+> css3+js 实现3D轮播
+
+[css3+js 实现3D轮播链接](https://alexz33.github.io/CSS3_demo/css3+js实现3D轮播.html)
+
