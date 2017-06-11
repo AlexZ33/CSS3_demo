@@ -1,6 +1,7 @@
-# CSS3
+﻿# CSS3
 
 各种CSS3的小玩意儿 (Widgets)
+
 
 ## 简介
 [css3_picshadow](https://alexz33.github.io/CSS3_demo/css3_picshadow.html)
@@ -46,4 +47,28 @@
 > css3+js 实现3D轮播
 
 [css3+js 实现3D轮播链接](https://alexz33.github.io/CSS3_demo/css3+js实现3D轮播.html)
+
+
+> 骑行的马里奥
+
+[mario](https://alexz33.github.io/CSS3_demo/mario/index.html)
+
+> 购物车
+
+[basket](https://alexz33.github.io/CSS3_demo/basket/index.html)
+
+# 详解
+
+CSS3动画功能
+
+- transition  从一个属性值平滑的过度到另个属性值
+
+transition: <过度属性名称> <过度时间> <过渡模式>
+
+![](http://on891bjlf.bkt.clouddn.com/css3/5.png)
+
+- animation  支持关键帧技术 在网页上完成更加复杂的动画效果
+
+
+
 
