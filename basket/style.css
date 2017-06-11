@@ -1,0 +1,88 @@
+/*  basket base styles*/
+
+body{margin: 0; position: relative;}
+*{
+  font-family: Calibri, sans-serif; 
+  font-weight: normal;
+  color: #333;
+}
+header{
+	padding: 10px 20px;
+
+	border-bottom: 1px solid #eee;
+	background: #fff;
+}
+
+header:after{
+	display: block;
+	content: "";
+	clear:both;
+}
+
+.basket ul{
+	padding: 0;
+	margin-top: 40px;
+}
+
+.basket li{
+	display: inline-block;
+	list-style-type: none;
+	width: 30%;
+	margin: 30px 1.5%;
+	text-align: center;
+}
+.basket button{
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.basket header div{
+	float: right;
+	position: relative;
+	z-index: 1;
+}
+
+.basket header h1{
+	float: left;
+}
+
+button{
+  padding: 10px;
+  border: 0;
+  color: #fff;
+  background: #333;
+  margin-left: -5px;
+  margin-left: -5px;
+  border-radius: 0 10px 10px 0;
+  border: 1px solid #333;
+  font-size: 18px;
+}
+
+h1{
+  font-size: 48px;
+  margin: 10px 0;
+}
+p{
+  margin-bottom: 40px;
+}
+
+
+/*  basket  animation styles*/
+
+.zoom{
+	position: absolute;
+	top: 40px;
+	right: 50%;
+	width: 40px;
+	opacity: 0;
+	animation: zoom 1s ease forwards;
+
+}
+
+@keyframes zoom {
+	0% {
+		opacity: 0;
+	}
+	50%{opacity: 1}
+	100%{opacity: 0 ;right:40px}
+}
