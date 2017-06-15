@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/* 浏览器样式清除 reset */
+body,form,div,span,ul,ol,li,p,pre,dl,dt,dd,h1,h2,h3,h4,h5,h6,em,a,fieldset,legend,address,label,textarea,select,input,figure,table,th,td,b,i{margin:0;padding:0;}
+body, button, input, select, textarea{ font:12px/1.5 Tahoma,Arial,'宋体'; }
+fieldset,img{border:0;}
+ul,li{list-style:none;}
+em,i{font-style:normal;}
+table{border-collapse:separate;border-spacing:0;}
+a{text-decoration:none;}
+a:hover{ text-decoration:underline;}
+a:focus,input,button,select,textarea{outline:none; font-size:100%;}
+h1,h2,h3,h4,h5,h6{ font-size:100%; font-variant: normal;}
+input,select,img{ vertical-align:middle;}
+legend{ display:none;}
+textarea{resize:none;}
+button {cursor:pointer;}
+
+html,body{ height:100%; width:100%; overflow:hidden; position: relative;}
+
+/*新建*/
+
+body{background: #2758a7 url(img/bg.jpg) no-repeat center bottom; background-size:100% auto;}
+.con_wrap{ display:block; height:100%; width:100%; background:none; position:absolute; left:0px; top:0px; -webkit-transition: -webkit-transform 0.3s linear,opacity 0.3s linear; -webkit-transform-origin: 50% 180%; z-index:2;}
+.wrap_show{ -webkit-transform:rotate(0deg); opacity:1; z-index:2;}
+
+.earth_bg{display: block;height: 100%;width: 100%;position: absolute;left:0;bottom:0;background: url(img/earth_bg.png) no-repeat center bottom;background-size: contain; z-index: 1;}
+.con_wrap .earth_bg{ z-index:2;} 
+
+
+@-webkit-keyframes a_building{
+	0%{ -webkit-transform:translate(0px,100px) scale(0.1,0.1); opacity:0;}
+	70%{ -webkit-transform:translate(0px,0px) scale(1.1,1.1); opacity:1;}
+	80%{ -webkit-transform:translate(0px,0px) scale(0.9,0.9); opacity:1;}
+	90%{ -webkit-transform:translate(0px,0px) scale(1.05,1.05); opacity:1;}
+	100%{ -webkit-transform:translate(0px,0px) scale(1,1); opacity:1;}
+}
+
+
+
+/*介绍页 3*/
+
+.wording_wrap .wording_4{ display: block; height: 70px; width: 138px;background: url(img/page_3_man.png) no-repeat 0 -109px; background-size:172px 300px; position:absolute; left:50%; margin-left:-69px; bottom:80px; opacity:0;}
+.tree_wrap{ display:block; width:100%;}
