@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>数据未写死 | js随机生成数据</title>
+	<style type="text/css">
+		 @-webkit-keyframes rowup {
+            0% {
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+            100% {
+                -webkit-transform: translate3d(0, -312px, 0);
+                transform: translate3d(0, -312px, 0);
+            }
+        }
+        @keyframes rowup {
+            0% {
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+            100% {
+                -webkit-transform: translate3d(0, -312px, 0);
+                transform: translate3d(0, -312px, 0);
+            }
+        }
+
+        .list{
+            width: 400px;
+            border: 1px solid #999;
+            margin-top: 20px;
+            position: relative;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .list .rowup{
+            -webkit-animation: 10s rowup linear infinite normal;
+            animation: 10s rowup linear infinite normal;
+            position: relative;
+        }
+	</style>
+</head>
+<body>
+	
+	<h1>用CSS3实现无限循环的无缝滚动</h1>
+    <p>返回仓库： <a href="https://github.com/AlexZ33/CSS3_demo">用CSS3实现无限循环的无缝滚动</a></p>
+
+    <p>使用js随机生成数据 | <a href="javascript:window.location.reload()">刷新页面观察不同数据</a></p>
+	<div class="list">
+		<div class="cc rowup">
+			<div class="item">1- 121233fffffr国家认可更健康进口价格困扰</div>
+	        <div class="item">2- 3123233</div>
+	        <div class="item">3- 个人口结构俄跨入国际科技馆客人感觉</div>
+	        <div class="item">4- ggrgerg</div>
+	        <div class="item">5- fvdgdv</div>
+	        <div class="item">6- 德国南部巴士与卡车相撞起火 31人受伤11人死亡朴槿惠庭审时突然昏迷 支持者：她死了法官要负责！</div>
+	        <div class="item">7- 外交部再次回应印军越界:要求立即将越界部队撤回</div>
+			<div class="item">8- 德国网红致信默克尔</div>
+	    	<div class="item">9- 国资委原</div>
+	        <div class="item">1- 121233fffffr国家认可更健康进口价格困扰</div>
+	        <div class="item">2- 3123233</div>
+	        <div class="item">3- 个人口结构俄跨入国际科技馆客人感觉</div>
+	        <div class="item">4- ggrgerg</div>
+	        <div class="item">5- fvdgdv</div>
+	        <div class="item">6- 德国南部巴士与卡车相撞起火 31人受伤11人死亡朴槿惠庭审时突然昏迷 支持者：她死了法官要负责！</div>
+	        <div class="item">7- 外交部再次回应印军越界:要求立即将越界部队撤回</div>
+	        <div class="item">8- 德国网红致信默克尔</div>
+	    	<div class="item">9- 国资委原</div>	
+	</div>
+	
+	<script type="text/javascript">
+		//设置keyframes属性
+		//如果数据不写死  这里就要根据数据来重新计算高度，并写到CSS里，可是keyframes修改起来还比较麻烦，
+		//那么我们就用覆盖的方式来重新keyframes中的数据：
+		function addKeyFrames(y){
+		    var style = document.createElement('style');
+		    style.type = 'text/css';
+		    var keyFrames = '\
+		    @-webkit-keyframes rowup {\
+		        0% {\
+		            -webkit-transform: translate3d(0, 0, 0);\
+		            transform: translate3d(0, 0, 0);\
+		        }\
+		        100% {\
+		            -webkit-transform: translate3d(0, A_DYNAMIC_VALUE, 0);\
+		            transform: translate3d(0, A_DYNAMIC_VALUE, 0);\
+		        }\
+		    }\
+		    @keyframes rowup {\
+		        0% {\
+		            -webkit-transform: translate3d(0, 0, 0);\
+		            transform: translate3d(0, 0, 0);\
+		        }\
+		        100% {\
+		            -webkit-transform: translate3d(0, A_DYNAMIC_VALUE, 0);\
+		            transform: translate3d(0, A_DYNAMIC_VALUE, 0);\
+		        }\
+		    }';
+		    style.innerHTML = keyFrames.replace(/A_DYNAMIC_VALUE/g, y);
+		    document.getElementsByTagName('head')[0].appendChild(style);
+		}
+		
+
+			
+		//计算出原始数据A的高度后，执行 addKeyFrames 方法，往head中添加css属性，那么这里的rowup就会覆盖掉之前设置的，每次滚动的距离就是数据A的高度：	
+		function init(){
+		    var data = '塞下秋来风景异，衡阳雁去无留意。四面边声连角起，千嶂里，长烟落日孤城闭。浊酒一杯家万里，燕然未勒归无计。羌管悠悠霜满地，人不寐，将军白发征夫泪。', //样例数据
+		        data_len = data.length,
+		        len = parseInt(Math.random()*6)+6, // 数据的长度
+		        html = '<div class="ss">';
+		    
+		    for(var i=0; i<len; i++){
+		        var start = parseInt( Math.random()*(data_len-20) ),
+		            s = parseInt( Math.random()*data_len );
+		        html += '<div class="item"v>'+i+'- '+data.substr(start, s)+'</div>';
+		    }
+		    html += '</div>';
+		    document.querySelector('.list .cc').innerHTML = html+html; // 复制一份数据
+		    var height = document.querySelector('.list .ss').offsetHeight; // 一份数据的高度
+		    addKeyFrames( '-'+height+'px' ); // 设置keyframes
+		    document.querySelector('.list .cc').className += ' rowup'; // 添加 rowup
+		}
+		init();
+	</script>
+</body>
+</html>
