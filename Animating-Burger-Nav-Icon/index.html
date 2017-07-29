@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Animating Menu </title>
+    <style>
+body{
+ background:#222;
+
+
+ }
+
+  #burger-container {
+    position: relative;
+    margin:200px auto;
+    width: 100px;
+  
+ }
+ #burger{
+  cursor: pointer;
+  display: block;
+
+ }
+
+ #burger span{
+  background:#eee;
+  display: block;
+  width: 100px;
+  height: 14px;
+  margin-bottom: 10px;
+  position: relative;
+  top: 0;
+  transition: all ease-in-out 0.4s;
+
+ }
+#burger-container.open span:nth-child(2),
+#burger-container.open span:nth-child(3){
+  width: 0;
+  opacity: 0;
+
+ }
+
+ #burger-container.open span:nth-child(1){
+   transform: rotate(-45deg);
+   top:36px;
+ }
+#burger-container.open span:nth-child(4){
+  transform: rotate(45deg);
+  top: -36px;
+ }
+
+    </style>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+  </head>
+     <body>
+       <div id="burger-container">
+         <div id="burger">
+           <span>&nbsp;</span>
+           <span>&nbsp;</span>
+           <span>&nbsp;</span>
+           <span>&nbsp;</span>
+            
+         </div>
+       </div>
+
+      <script>
+       $(document).ready(function() {
+        $("#burger-container").on("click", function() {
+	       $(this).toggleClass("open");
+	       });
+       });
+      </script>
+     </body>
+</html>
