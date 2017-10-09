@@ -1,7 +1,14 @@
 ﻿# CSS3
 
 各种CSS3的小玩意儿 (Widgets)
+
 [css3制作图形大全](http://www.jqhtml.com/8045.html)
+
+[网页动画的十二原则](https://cssanimation.rocks/cn/principles/)
+
+[过度效果vs动效](https://cssanimation.rocks/cn/transition-vs-animation/)
+
+[伪元素(pseudo-elements)动画](https://cssanimation.rocks/cn/pseudo-elements/)
 
 ## 简介
 [css3_picshadow](https://alexz33.github.io/CSS3_demo/css3_picshadow.html)
