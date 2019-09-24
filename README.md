@@ -1,16 +1,28 @@
-﻿# CSS3
+﻿# 我的文章
+[JavaScript Tween算法及缓动效果](https://segmentfault.com/a/1190000018945889)
+
+# CSS3
 
 各种CSS3的小玩意儿 (Widgets)
+
+
+# 扩展阅读
 
 [css3制作图形大全](http://www.jqhtml.com/8045.html)
 
 [网页动画的十二原则](https://cssanimation.rocks/cn/principles/)
 
+[入门必读！迪士尼影响至今的十二条动画经典法则](https://www.zcool.com.cn/article/ZNDI1ODAw.html)
+
 [过度效果vs动效](https://cssanimation.rocks/cn/transition-vs-animation/)
 
 [伪元素(pseudo-elements)动画](https://cssanimation.rocks/cn/pseudo-elements/)
 
-## 简介
+[贝塞尔曲线在线调试工具](https://cubic-bezier.com/#.17,.67,.83,.67)
+
+[贝塞尔缓动函数库](https://easings.net/)
+
+## css3
 [css3_picshadow](https://alexz33.github.io/CSS3_demo/css3_picshadow.html)
 
 [CSS3+JS-Preview-Slideshow](https://alexz33.github.io/CSS3_demo/CSS3+JS-Preview-Slideshow/index.html)
@@ -66,7 +78,7 @@
 
 > 求婚动画
 
-[marriage-proposal](http://jxdxsw.com/CSS3_demo/marriage-proposal/index.html)
+[marriage-proposal](https://alexz33.github.io/CSS3_demo/marriage-proposal/index.html)
 
 # 详解
 
@@ -79,6 +91,12 @@ transition: <过度属性名称> <过度时间> <过渡模式>
 ![](http://on891bjlf.bkt.clouddn.com/css3/5.png)
 
 - animation  支持关键帧技术 在网页上完成更加复杂的动画效果
+
+
+
+# 参考
+
+《css揭秘》
 
 
 
