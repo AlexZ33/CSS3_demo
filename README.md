@@ -80,6 +80,25 @@
 
 [marriage-proposal](https://alexz33.github.io/CSS3_demo/marriage-proposal/index.html)
 
+# 常见问题
+> 1、页面某个模块的文字内容是动态的，可能是是几个字，也可能是一句话，然后希望文字少的时候居中显示，文字超过一行的时候居左显示，如何实现？
+
+````
+
+.box{
+  text-align: center;
+}
+
+.content{
+  display: inline-block;
+  text-align: left;
+}
+````
+
+- 重点在于display，利用了元素的包裹性，除了inline-block元素，浮动元素以及绝对定位元素都具有包裹性，均有类似的智能宽度的行为
+
+
+
 # 详解
 
 CSS3动画功能
