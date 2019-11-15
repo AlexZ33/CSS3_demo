@@ -21,6 +21,89 @@
 [贝塞尔曲线在线调试工具](https://cubic-bezier.com/#.17,.67,.83,.67)
 
 [贝塞尔缓动函数库](https://easings.net/)
+# 常见效果
+
+1、 实现内部虚线边框
+https://codepen.io/AlexZ33/pen/BaBvbEr
+
+- 知识点：outline
+
+````
+.dash-border {
+  outline: 1px dashed #fff;
+  outline-offset: 1rem;
+}
+
+````
+
+2、边框内圆角的实现
+
+- 知识点：box-shadow
+
+```
+.radius-border{
+  width: 10rem;
+  height: 2rem;
+  border-radius: 3px;
+  box-shadow: 0 0 0 10px gray;
+}
+
+````
+
+3、 实现条纹背景与进度条
+
+- 知识点：linear-gradient,repeating-linear-gradient
+
+````
+
+/* 上 */
+background: linear-gradient(to right,#fb3 50%,#58a 0);
+background-size: 40px 100%;
+box-shadow: inset 0 0 3px #555;
+
+/* 中 */
+background: linear-gradient(45deg,#fb3 25%,#58a 0,#58a 50%,#fb3 0,#fb3 75%,#58a 0);
+background-size: 40px 40px;
+
+/* 下 (可以实现任意角度的渐变，45°时显示效果最好) */
+background: repeating-linear-gradient(60deg,#fb3,#fb3 15px,#58a 0,#58a 30px);
+
+````
+
+4、 [半透明边框](https://codepen.io/AlexZ33/pen/rNBPGOj
+)
+
+- 原理：利用background-clip:padding-box实现背景色不占用边框底部（默认情况下background-clip的初始值是border-box，这意味着当边框设置半透明色值时，显示的会是背景色叠加透明色的效果）
+
+5、 [多重边框](http://dabblet.com/gist/525eb8e9cdade71723c1)
+
+- 原理：1、利用box-shadow可以创建任意数量的投影（实色即边框），但注意投影是不占用元素布局的。 2、利用outline实现双重边框
+
+6、[灵活背景定位](http://dabblet.com/gist/0f226e63595d1bef88cb)
+
+- 原理：background-positioon:right 10px bottom 20px;指背景位置距离右边10px，距离底部20px.
+
+````
+
+/**
+ * Flexible background positioning
+ * via extended background-position
+ */
+
+div {
+	background: url(http://csssecrets.io/images/code-pirate.svg)
+	            no-repeat bottom right #58a;
+	background-position: right 20px bottom 10px;
+	
+	/* Styling */
+	max-width: 10em;
+	min-height: 5em;
+	padding: 10px;
+	color: white;
+	font: 100%/1 sans-serif;
+}
+
+````
 
 ## css3
 [css3_picshadow](https://alexz33.github.io/CSS3_demo/css3_picshadow.html)
@@ -82,15 +165,23 @@
 
 # 详解
 
+## 动画
+
 CSS3动画功能
 
 - transition  从一个属性值平滑的过度到另个属性值
-
+```
 transition: <过度属性名称> <过度时间> <过渡模式>
+
+```
 
 ![](http://on891bjlf.bkt.clouddn.com/css3/5.png)
 
 - animation  支持关键帧技术 在网页上完成更加复杂的动画效果
+
+- [贝塞尔曲线在线工具](https://cubic-bezier.com/#.17,.67,.83,.67)
+
+
 
 
 
