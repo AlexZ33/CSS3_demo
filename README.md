@@ -163,6 +163,26 @@ div {
 
 [marriage-proposal](https://alexz33.github.io/CSS3_demo/marriage-proposal/index.html)
 
+# 常见问题
+> 1、页面某个模块的文字内容是动态的，可能是是几个字，也可能是一句话，然后希望文字少的时候居中显示，文字超过一行的时候居左显示，如何实现？
+
+````
+
+.box{
+  text-align: center;
+}
+
+.content{
+  display: inline-block;
+  text-align: left;
+}
+````
+
+- 重点在于display，利用了元素的包裹性，除了inline-block元素，浮动元素以及绝对定位元素都具有包裹性，均有类似的智能宽度的行为
+
+
+
+
 # 详解
 
 ## 动画
@@ -179,15 +199,20 @@ transition: <过度属性名称> <过度时间> <过渡模式>
 
 - animation  支持关键帧技术 在网页上完成更加复杂的动画效果
 
+<<<<<<< HEAD
 - [贝塞尔曲线在线工具](https://cubic-bezier.com/#.17,.67,.83,.67)
 
 
+=======
+一般来说，我们会使用 JavaScript 来实现一些视觉变化的效果。比如用 jQuery 的 animate 函数做一个动画、对一个数据集进行排序或者往页面里添加一些 DOM 元素等。当然，除了 JavaScript，还有其他一些常用方法也可以实现视觉变化效果，比如：CSS Animations、Transitions 和 Web Animation API。
+>>>>>>> 85171b108770dc5e175b97823513cb9fe5bc0c06
 
 
 
 # 参考
 
 《css揭秘》
+《css世界》
 
 
 
