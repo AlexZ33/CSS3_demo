@@ -5,6 +5,12 @@
 
 各种CSS3的小玩意儿 (Widgets)
 
+# 博客推荐
+
+- [Chok Coco](https://www.cnblogs.com/coco1s)
+- [CSS-TRICK](https://css-tricks.com/)
+- [CSS PLUS](https://www.w3cplus.com/CSS3?page=4)
+- [张鑫旭-鑫空间-鑫生活](https://www.zhangxinxu.com/wordpress/)
 
 # 扩展阅读
 
