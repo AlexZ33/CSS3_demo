@@ -227,6 +227,7 @@ transition: <过度属性名称> <过度时间> <过渡模式>
 
 《css揭秘》
 《css世界》
+[Web Fundamentals 动画](https://developers.google.com/web/fundamentals/design-and-ux/animations)
 
 
 
