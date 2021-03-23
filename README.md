@@ -199,7 +199,7 @@ div {
 
 # 详解
 
-## 动画
+## [动画](https://developers.google.com/web/fundamentals/design-and-ux/animations)
 
 CSS3动画功能
 
