@@ -17,6 +17,11 @@
 
 [CSS教程： CSS（高级）](https://segmentfault.com/a/1190000021902412)
 
+# 工具
+邮件CSS支持速查 https://www.campaignmonitor.com/css/
+RGB颜色参考速查 http://tool.oschina.net/commons?type=3
+颜色深浅转换工具 https://pinetools.com/lighten-color
+
 # CSS3
 
 各种CSS3的小玩意儿 (Widgets)
